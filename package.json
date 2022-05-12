@@ -1,0 +1,24 @@
+{
+  "name": "proffus-assign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "npm run build && nodemon index.js",
+    "build": "babel jsx --out-dir public/js"
+  },
+  "author": "Ayush Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "nodemon": "^2.0.16"
+  }
+}
