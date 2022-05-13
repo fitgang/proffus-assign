@@ -34,7 +34,6 @@ ul {
 
 .section {
   padding: 2em var(--section-padding-horizontal);
-  padding-bottom: 1em;
   text-align: center;
 }
 
@@ -96,11 +95,15 @@ nav a {
 }
 
 .card {
-  text-align: center;
+  text-align: left;
   background-color: #fff;
   box-shadow: 0 0 5px #0003;
   border-radius: 20px;
   padding: 1.5em 1em;
+}
+
+#categories-container .card {
+  text-align: center;
 }
 
 #glance>h2 {
@@ -127,6 +130,48 @@ nav a {
   width: 3em;
 }
 
-#play-btn path {
-  fill: #fff;
+.faq {
+  padding: 1em 2em;
+  line-height: 150%;
+  font-size: 0.9em;
+  margin-top: 3em;
+}
+
+.faq h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq img {
+  align-self: baseline;
+  padding: 0px 5px;
+  margin-left: 2em;
+  height: 1.75em;
+}
+
+.faq p {
+  margin-top: 2em;
+}
+
+.read {
+  padding: 2em;
+  margin-top: 3em;
+}
+
+.read h3 {
+  margin: 0;
+}
+
+.read a {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  justify-content: flex-end;
+}
+
+.read img {
+  height: 1.2em;
+  transform: rotate(-90deg);
+  margin-left: 0.5em;
 }
