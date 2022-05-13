@@ -103,6 +103,11 @@ nav a {
   padding: 1.5em 1em;
 }
 
+.card:hover {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
 #categories-container .card {
   text-align: center;
 }
@@ -149,10 +154,30 @@ nav a {
   padding: 0px 5px;
   margin-left: 2em;
   height: 1.75em;
+  transition: transform 0.5s;
 }
 
 .faq p {
-  margin-top: 2em;
+  --dur: 0.5s;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition: max-height var(--dur), transform var(--dur), opacity var(--dur);
+}
+
+.faq h3:hover {
+  cursor: pointer;
+}
+
+h3.active>img {
+  transform: rotateX(180deg);
+}
+
+h3.active+p {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .read a,
