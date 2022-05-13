@@ -1,0 +1,83 @@
+:root {
+  --body-bg-color: #f7fcff;
+  --section-padding-horizontal: 6em;
+  --font-family: Arial;
+  --primary-color: #0e79bd;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-bg-color);
+  font-family: var(--font-family);
+  font-size: 1.5em;
+}
+
+img[src="/public/images/icon.jpg"] {
+  width: 220px;
+}
+
+img[src="/public/images/hero-image.jpg"] {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding: 2em var(--section-padding-horizontal);
+  padding-bottom: 1em;
+}
+
+.section a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.btn {
+  padding: 0.5em 1.75em;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+}
+
+header,
+nav>ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+header.section a {
+  text-transform: capitalize;
+}
+
+nav a {
+  padding: 0.5em;
+  margin-left: 15px;
+}
+
+#hero {
+  text-align: center;
+}
+
+#hero>h2 {
+  margin-top: 3em;
+}
