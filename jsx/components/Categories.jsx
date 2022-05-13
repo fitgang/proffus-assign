@@ -1,7 +1,7 @@
 const Categories = (props) => {
   
   const categories = props.categories.map(({name, image}) => {
-    return <li>
+    return <li className="card">
       <img src={image} alt={name} />
       <div>{name}</div>
     </li>
