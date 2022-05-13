@@ -1,2 +1,6 @@
-import "/node_modules/react/umd/react.production.min.js";
-console.log(React);
+import Categories from "./components/Categories.js";
+const categories = await fetch("/categories").then(response => response.json()).catch(err => console.error(err.message));
+const root = ReactDOM.createRoot(document.getElementById("categories-container"));
+root.render( /*#__PURE__*/React.createElement(Categories, {
+  categories: categories
+}));
